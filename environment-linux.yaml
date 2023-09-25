@@ -1,0 +1,23 @@
+# conda env create -f environment-linux.yaml
+# conda env update -n dl-course --file environment-linux.yaml
+name: dl-course
+channels:
+- pytorch
+- nvidia
+- conda-forge
+dependencies:
+- python=3.10
+- pip
+- pytorch=2.0.1
+- pytorch-cuda=11.8
+- cudatoolkit=11.8
+- torchvision>=0.15.2
+- torchaudio>=2.0.2
+- pip:
+  - lightning
+  - matplotlib
+  - seaborn
+  - plotly
+  - jupyter
+  - notebook
+  - aim

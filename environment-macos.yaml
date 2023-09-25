@@ -1,0 +1,20 @@
+# conda env create -f environment-macos.yaml
+# conda env update -n dl-course --file environment-macos.yaml
+name: dl-course
+channels:
+- pytorch
+- conda-forge
+dependencies:
+- python=3.10
+- pip
+- pytorch::pytorch=2.0.1
+- torchvision>=0.15.2
+- torchaudio>=2.0.2
+- pip:
+  - lightning
+  - matplotlib
+  - seaborn
+  - plotly
+  - jupyter
+  - notebook
+  - aim
