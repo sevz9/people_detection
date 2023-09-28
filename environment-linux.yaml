@@ -14,10 +14,10 @@ dependencies:
 - torchvision>=0.15.2
 - torchaudio>=2.0.2
 - pip:
-  - lightning
-  - matplotlib
-  - seaborn
-  - plotly
+  - lightning==2.0.9
+  - matplotlib==3.8.0
+  - seaborn==0.12.2
+  - plotly==5.17.0
   - jupyter
   - notebook
-  - aim
+  - aim==3.17.5
